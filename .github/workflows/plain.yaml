@@ -1,0 +1,15 @@
+name: Plain workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Configure with CMake
+        run: cmake -B ./out/ -S .
