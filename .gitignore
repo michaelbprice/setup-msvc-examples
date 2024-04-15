@@ -1,0 +1,6 @@
+# Visual Studio and Visual Studio Code settings
+.vscode/
+.vs/
+
+# CMake output directories
+out/
